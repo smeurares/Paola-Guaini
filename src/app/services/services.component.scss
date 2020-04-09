@@ -1,0 +1,111 @@
+@import "../../styles.scss";
+@import "../../variables.scss";
+
+.page-section {
+  background: linear-gradient(0deg, rgba(236,241,245,1) 0%, rgba(12,80,143,0.8071603641456583) 100%), url('../../assets/img/horizon-927206_1920.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+   
+    
+      
+    
+    @include xm {
+        height: 100vh;
+        padding-top: 1.5rem;
+       
+       
+       
+      }
+    .row{
+      
+        
+        
+            @include xm {
+                margin-bottom: 0;
+                height: 25%;
+              }
+        
+
+        h2{
+          
+            @include xm {
+              margin: 0 auto;
+              width: 100%;
+              max-width: min-content;
+              padding: 0 auto;
+              }
+             @include sm {
+                margin: 0 auto;
+                width: 100%;
+                max-width: min-content;
+                padding: 0 auto;
+              }
+             @include md {
+                margin: 0 auto;
+                width: 100%;
+                max-width: min-content;
+                padding: 0 auto;
+                
+              }
+             
+              
+        }
+    }
+   
+
+    .container{
+       width: 100%;
+      
+       margin: 0 auto;
+        
+            @include xm {
+               margin-bottom: 1rem;
+              }
+    
+        .row{
+           
+
+            @include xm {
+                padding-top: .3rem;
+              }
+              .card{
+                height: 100%;
+               
+            .card-body{
+              background: #43C6AC;  /* fallback for old browsers */
+              //border: 1px solid yellow;
+              border-radius: 7px;
+
+              -webkit-box-shadow: 9px 10px 14px -4px rgba(77,102,222,0.71);
+              -moz-box-shadow: 9px 10px 14px -4px rgba(77,102,222,0.71);
+              box-shadow: 15px 7px 14px -4px rgba(77,102,222,0.71);
+
+
+              h5{
+                @include xm {
+                    font-size: 1.3rem;
+                  }
+            }
+    
+            h6{
+                @include xm {
+                   font-size: 1.2rem;
+                  }
+            }
+    
+            p{
+                @include xm {
+                   font-size: .9rem;
+                  }
+            }
+        }
+      }
+      }
+
+        
+
+        
+    }
+}

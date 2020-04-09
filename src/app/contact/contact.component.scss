@@ -1,0 +1,30 @@
+@import "../../styles.scss";
+@import "../../variables.scss";
+
+.page-section{
+    .h-80{
+        height: 77%;
+    }
+    @include xm {
+        padding-top: 1.7rem;
+        padding-bottom: .3rem;
+        margin-bottom: .3rem;
+      }
+    .row{
+       h2{
+        @include xm {
+            padding-top: .5rem;
+            font-size: 1.5rem;
+          }
+       }
+       a{
+        @include xm {
+            padding-bottom: 1rem;
+            padding-top: 0;
+          }
+       }
+    }
+
+    
+
+}

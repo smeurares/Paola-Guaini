@@ -1,0 +1,61 @@
+@import "../../variables.scss";
+@import "../../styles.scss";
+
+
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - #{$navbar-height});
+    // replace the masthead.jpg image in the /img directory to change the image
+    // if the image name change, make sure to update the url path below!
+    background: linear-gradient(to bottom, #{fade-out($brown, .4)} 0%,#{fade-out($orange, .4)} 100%), url('../../assets/img/mountain-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+
+    @include xm {
+      padding-top: 5rem;
+    }
+
+    @include md {
+      margin-top: 0;
+    }
+    
+    @include lg{
+     margin-top: 0;
+    
+     
+    }
+
+    
+
+    h1 {
+      font-size: 3.25rem;
+      @include xm {
+       font-size: 1.5rem;
+      }
+      @include md {
+        font-size: 3rem;
+      }
+    }
+    .hover{
+        font-size: 1.7rem;
+        color: rgb(255, 255, 255);
+
+        @include xm {
+          font-size: 1.2rem;
+        }
+
+        @include md {
+          font-size: 2rem;
+        }
+        
+        &:hover{
+        color: #3cc4658c;
+    }
+}
+   .hover-button:hover {
+        background-color: #3cc4658c;
+   }
+}
+  

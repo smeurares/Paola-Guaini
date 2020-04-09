@@ -1,0 +1,24 @@
+@import "../../styles.scss";
+@import "../../variables.scss";
+
+
+.page-section {
+    background: linear-gradient(to bottom, #{fade-out($brown, .4)} 0%,#{fade-out($orange, .4)} 100%), url('../../assets/img/60321-full_light-abstract-wallpaper-moneysand-info.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+
+    h2{
+        color: #054d0e;
+    }
+    
+    p{
+        line-height: 1.8rem;
+        letter-spacing: 0.4px;
+    }
+
+    .hover-button:hover {
+        background-color: #3cc4658c;
+   }
+}
